@@ -101,7 +101,3 @@ python bin/keygen.py scad/schlage_classic.scad -o key.png --render
 ## Contributing
 
 There is a very limited selection of keys right now, to help out, see the guide on [how to model keys](doc/how_to_model_keys.md).
-
-## Music
-
-There is no keygen music yet, in the meantime, try [here](https://soundcloud.com/dualtrax/sets/orion-keygen-music)
