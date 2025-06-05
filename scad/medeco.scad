@@ -57,7 +57,7 @@ outlines_v = [[outline_a1515_points, outline_a1515_paths,
                [-outline_1655_points[48][0], -outline_1655_points[52][1]],
                engrave_1655_points,
                engrave_1655_paths],
-               [outline_M3_points, outline_M3_paths,
+              [outline_M3_points, outline_M3_paths,
                [-outline_M3_points[47][0], -outline_M3_points[43][1]],
                engrave_M3_points,
                engrave_M3_paths]];
