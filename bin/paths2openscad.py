@@ -21,7 +21,7 @@
 #   using OpenSCAD's difference()
 
 # 29 Sept 2024
-#   Updated to Python 3 and fixed deprecation issues:
+#   Updated by AdventureDan to Python 3 and fixed deprecation issues:
 #   - Replaced `cspsubdiv.maxdist` with `inkex.bezier.maxdist`
 #   - Replaced `bezmisc.beziersplitatt` with `inkex.bezier.beziersplitatt`
 #   - Updated to use `inkex.Transform` for matrix transformations.
