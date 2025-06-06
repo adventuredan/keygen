@@ -26,7 +26,7 @@ class MyHandler(BaseHTTPRequestHandler):
             self.wfile.write(b)
         else:
             key_filename = query_components["key"][0]
-            if not re.match(r"scad/[A-Za-z0-9_]+.scad$", key_filename):
+            if not re.match(r"scad/[A-Za-z0-9_-]+\.scad$", key_filename):
                 self.send_response(400)
                 self.send_header("Content-type", "text/plain; charset=utf-8")
                 self.end_headers()
