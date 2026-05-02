@@ -1,2 +1,4 @@
-
-*.stl
+venv/
+web/__pycache__/
+web/serve.py.bak
+*.pyc

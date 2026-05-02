@@ -91,7 +91,7 @@ module medeco_m3(bitting="",
         key_bitting(heights, cut_locations + offsets,
                     flat=.381, angle=86, // from CW-1012 cutter specs
                     angles=angles);
-        m3_slider(slider*25.4);
+        m3_slider(slider_depth*25.4);
     }
 }
 
@@ -99,5 +99,5 @@ module medeco_m3(bitting="",
 bitting="";
 outline="M3";
 warding="M3";
-slider=0.6;
-medeco_m3(bitting, outline, warding, slider);
+slider_depth=0.6;
+medeco_m3(bitting, outline, warding, slider_depth);

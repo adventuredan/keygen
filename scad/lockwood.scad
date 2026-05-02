@@ -15,14 +15,14 @@ module lockwood(bitting="",
 
     outlines_k = ["LW4",
                   "LW5"];
-    outlines_v = [[outline_LW5_points, outline_LW5_paths,
-                   [-outline_LW5_points[6][0], -outline_LW5_points[4][1]],
-                   engrave_LW5_points,
-                   engrave_LW5_paths],
-                   [outline_LW4_points, outline_LW4_paths,
+    outlines_v = [[outline_LW4_points, outline_LW4_paths,
                    [-outline_LW4_points[6][0], -outline_LW4_points[4][1]],
                    engrave_LW4_points,
-                   engrave_LW4_paths]];
+                   engrave_LW4_paths],
+                   [outline_LW5_points, outline_LW5_paths,
+                   [-outline_LW5_points[6][0], -outline_LW5_points[4][1]],
+                   engrave_LW5_points,
+                   engrave_LW5_paths]];
     wardings_k = ["LW5"];
     wardings_v = [warding_LW5_points];
 

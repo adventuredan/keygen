@@ -8,6 +8,39 @@
 <script type="text/javascript" src="js/3d_preview.js"></script>
 <script type="text/javascript" src="js/keygen.js"></script>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<style>
+  #warding_preview_container {
+    margin-top: 1em;
+    text-align: center;
+  }
+  #warding_preview_container .field_label {
+    margin-bottom: 0.4em;
+  }
+  #warding_preview_box {
+    width: 7em;
+    height: 7em;
+    margin: auto;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #warding_preview_box svg {
+    width: 85%;
+    height: 85%;
+  }
+  #warding_preview_box .no_preview {
+    font-size: 0.6em;
+    color: #777;
+    text-align: center;
+    padding: 8px;
+  }
+  #key_download {
+    display: block;
+    margin-top: 1em;
+  }
+</style>
 </head>
 <body>
 <div id="main">
@@ -24,6 +57,19 @@
                     <div class="field"><div class="field_label">Warding</div><select id="key_warding"></select></div>
                     <div id="key_description"></div>
                     <div class="field"><div class="field_label">Bitting</div><input id="key_bitting"></input></div>
+
+                    <!-- Extra fields: hidden by default, shown per key type -->
+                    <div class="field extra_field" id="field_slider_depth" style="display:none;">
+                        <div class="field_label">Slider Depth (in)</div>
+                        <select id="param_slider_depth">
+                            <option value="0.3">0.3"</option>
+                            <option value="0.4">0.4"</option>
+                            <option value="0.5">0.5"</option>
+                            <option value="0.6" selected>0.6" (default)</option>
+                            <option value="0.7">0.7"</option>
+                        </select>
+                    </div>
+
                     <input type="submit" value="Generate" id="generate_button"></input>
                 </form>
             </div>
@@ -39,6 +85,10 @@
                 <div id="generated_key" style="display:none;">
                     <div id="key_preview"></div>
                     <a id="key_download" href="#">Download STL</a>
+                </div>
+                <div id="warding_preview_container">
+                    <div class="field_label">Keyway</div>
+                    <div id="warding_preview_box"><div class="no_preview">No preview</div></div>
                 </div>
             </div>
         </div>
